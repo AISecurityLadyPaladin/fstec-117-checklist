@@ -14,17 +14,11 @@
             --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
             --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c4a6e 100%);
             --gradient-card: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 100%);
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
-            --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
-            --shadow-xl: 0 16px 48px rgba(0,0,0,0.15);
-            --radius: 12px; --radius-lg: 20px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08); --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.12); --radius: 12px; --radius-lg: 20px;
         }
         html { scroll-behavior: smooth; font-size: 16px; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            color: var(--gray-700); line-height: 1.7; background: var(--gray-100); overflow-x: hidden;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: var(--gray-700); line-height: 1.7; background: var(--gray-100); overflow-x: hidden; }
         nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.3s ease; }
         nav.scrolled { background: rgba(15, 23, 42, 0.95); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
         .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; height: 64px; }
@@ -128,12 +122,9 @@
         .req-category.integrity { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
         .severity { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; font-weight: 600; }
         .severity .dot { width: 8px; height: 8px; border-radius: 50%; }
-        .severity.high .dot { background: var(--danger); }
-        .severity.high { color: var(--danger); }
-        .severity.medium .dot { background: var(--warning); }
-        .severity.medium { color: var(--warning); }
-        .severity.low .dot { background: var(--success); }
-        .severity.low { color: var(--success); }
+        .severity.high .dot { background: var(--danger); } .severity.high { color: var(--danger); }
+        .severity.medium .dot { background: var(--warning); } .severity.medium { color: var(--warning); }
+        .severity.low .dot { background: var(--success); } .severity.low { color: var(--success); }
         .check-col { display: flex; align-items: center; justify-content: center; }
         .custom-check { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--gray-300); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; background: var(--white); }
         .custom-check:hover { border-color: var(--primary); }
@@ -149,15 +140,11 @@
         .ai-card { background: var(--gray-100); border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--gray-300); position: relative; overflow: hidden; transition: all 0.3s; }
         .ai-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
         .ai-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
-        .ai-card:nth-child(1)::before { background: var(--primary); }
-        .ai-card:nth-child(2)::before { background: var(--success); }
-        .ai-card:nth-child(3)::before { background: var(--warning); }
-        .ai-card:nth-child(4)::before { background: var(--accent); }
+        .ai-card:nth-child(1)::before { background: var(--primary); } .ai-card:nth-child(2)::before { background: var(--success); }
+        .ai-card:nth-child(3)::before { background: var(--warning); } .ai-card:nth-child(4)::before { background: var(--accent); }
         .ai-card-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
-        .ai-card:nth-child(1) .ai-card-icon { background: var(--primary-light); }
-        .ai-card:nth-child(2) .ai-card-icon { background: rgba(16, 185, 129, 0.1); }
-        .ai-card:nth-child(3) .ai-card-icon { background: rgba(245, 158, 11, 0.1); }
-        .ai-card:nth-child(4) .ai-card-icon { background: var(--accent-light); }
+        .ai-card:nth-child(1) .ai-card-icon { background: var(--primary-light); } .ai-card:nth-child(2) .ai-card-icon { background: rgba(16, 185, 129, 0.1); }
+        .ai-card:nth-child(3) .ai-card-icon { background: rgba(245, 158, 11, 0.1); } .ai-card:nth-child(4) .ai-card-icon { background: var(--accent-light); }
         .ai-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 0.75rem; }
         .ai-card p { font-size: 0.95rem; color: var(--gray-500); line-height: 1.7; }
         .ai-card ul { list-style: none; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
@@ -190,38 +177,9 @@
         footer { background: var(--dark); padding: 2rem; text-align: center; }
         footer p { color: var(--gray-500); font-size: 0.85rem; }
         footer a { color: var(--accent); text-decoration: none; }
-        @media (max-width: 1024px) {
-            .hero-content { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
-            .hero-desc { margin: 0 auto 2.5rem; }
-            .hero-actions { justify-content: center; }
-            .hero-visual { max-width: 500px; margin: 0 auto; }
-            .problem-grid { grid-template-columns: 1fr; gap: 3rem; }
-            .ai-grid { grid-template-columns: 1fr 1fr; }
-            .contacts-grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
-            section { padding: 4rem 1.25rem; }
-            .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: rgba(15, 23, 42, 0.98); flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
-            .nav-links.open { display: flex; }
-            .nav-burger { display: flex; }
-            .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-            .nav-burger.open span:nth-child(2) { opacity: 0; }
-            .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-            .hero { min-height: auto; padding-top: 100px; padding-bottom: 3rem; }
-            .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
-            .problem-cards { grid-template-columns: 1fr; }
-            .ai-grid { grid-template-columns: 1fr; }
-            .table-toolbar { flex-direction: column; align-items: flex-start; }
-            .table-footer { flex-direction: column; align-items: flex-start; }
-            .progress-bar { width: 100%; }
-        }
-        @media (max-width: 480px) {
-            .hero h1 { font-size: 1.8rem; }
-            .hero-actions { flex-direction: column; align-items: center; }
-            .btn { width: 100%; justify-content: center; }
-            .hero-stats { grid-template-columns: 1fr; gap: 0.5rem; }
-            .stat { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; }
-        }
+        @media (max-width: 1024px) { .hero-content { grid-template-columns: 1fr; gap: 3rem; text-align: center; } .hero-desc { margin: 0 auto 2.5rem; } .hero-actions { justify-content: center; } .hero-visual { max-width: 500px; margin: 0 auto; } .problem-grid { grid-template-columns: 1fr; gap: 3rem; } .ai-grid { grid-template-columns: 1fr 1fr; } .contacts-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { section { padding: 4rem 1.25rem; } .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: rgba(15, 23, 42, 0.98); flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); } .nav-links.open { display: flex; } .nav-burger { display: flex; } .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); } .nav-burger.open span:nth-child(2) { opacity: 0; } .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); } .hero { min-height: auto; padding-top: 100px; padding-bottom: 3rem; } .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; } .problem-cards { grid-template-columns: 1fr; } .ai-grid { grid-template-columns: 1fr; } .table-toolbar { flex-direction: column; align-items: flex-start; } .table-footer { flex-direction: column; align-items: flex-start; } .progress-bar { width: 100%; } }
+        @media (max-width: 480px) { .hero h1 { font-size: 1.8rem; } .hero-actions { flex-direction: column; align-items: center; } .btn { width: 100%; justify-content: center; } .hero-stats { grid-template-columns: 1fr; gap: 0.5rem; } .stat { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; } }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
     </style>
@@ -230,19 +188,14 @@
 
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">
-                <div class="logo-icon">🛡️</div>
-                ФСТЭК-117
-            </a>
+            <a href="#" class="nav-logo"><div class="logo-icon">🛡️</div>ФСТЭК-117</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#problem">Проблема</a></li>
                 <li><a href="#requirements">Требования</a></li>
                 <li><a href="#ai">Обоснование ИИ</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
-            <button class="nav-burger" id="burger" aria-label="Меню">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav-burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
@@ -250,20 +203,9 @@
         <div class="hero-grid"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <div class="hero-badge">
-                    <span class="pulse"></span>
-                    Версия 2026
-                </div>
-                <h1>
-                    Чек-лист самопроверки<br>
-                    <span class="highlight">ИИ-систем</span> на соответствие<br>
-                    ФСТЭК-117
-                </h1>
-                <p class="hero-desc">
-                    Практический инструмент для разработчиков и заказчиков ИИ-систем. 
-                    Проверьте соответствие требованиям регулятора по 10 ключевым направлениям 
-                    безопасности до прохождения аудита.
-                </p>
+                <div class="hero-badge"><span class="pulse"></span>Версия 2026</div>
+                <h1>Чек-лист самопроверки<br><span class="highlight">ИИ-систем</span> на соответствие<br>ФСТЭК-117</h1>
+                <p class="hero-desc">Практический инструмент для разработчиков и заказчиков ИИ-систем. Проверьте соответствие требованиям регулятора по 10 ключевым направлениям безопасности до прохождения аудита.</p>
                 <div class="hero-actions">
                     <a href="#requirements" class="btn btn-primary">📋 Начать проверку</a>
                     <a href="#ai" class="btn btn-outline">Узнать больше →</a>
@@ -272,11 +214,8 @@
             <div class="hero-visual">
                 <div class="hero-card">
                     <div class="hero-card-header">
-                        <div class="hero-card-icon">📋</div>
-                        <div>
-                            <div class="hero-card-title">Чек-лист ФСТЭК-117</div>
-                            <div class="hero-card-subtitle">10 требований • 4 категории</div>
-                        </div>
+                        <div class="hero-card-icon"></div>
+                        <div><div class="hero-card-title">Чек-лист ФСТЭК-117</div><div class="hero-card-subtitle">10 требований • 4 категории</div></div>
                     </div>
                     <div class="checklist-preview">
                         <div class="checklist-item"><div class="check-icon done">✓</div><span>Защита персональных данных</span></div>
@@ -344,9 +283,7 @@
                 </div>
                 <div class="table-scroll">
                     <table id="reqTable">
-                        <thead>
-                            <tr><th>№</th><th>Требование</th><th>Описание</th><th>Категория</th><th>Важность</th><th>✓</th></tr>
-                        </thead>
+                        <thead><tr><th>№</th><th>Требование</th><th>Описание</th><th>Категория</th><th>Важность</th><th>✓</th></tr></thead>
                         <tbody>
                             <tr data-category="security"><td>1</td><td><strong>Защита тренировочных данных</strong></td><td>Обеспечение конфиденциальности и целостности наборов данных, используемых для обучения и валидации ИИ-модели</td><td><span class="req-category data">Данные</span></td><td><span class="severity high"><span class="dot"></span>Высокая</span></td><td><div class="check-col"><div class="custom-check" data-req="1"></div></div></td></tr>
                             <tr data-category="security"><td>2</td><td><strong>Контроль целостности модели</strong></td><td>Механизмы верификации контрольных сумм весов и архитектуры модели, предотвращение несанкционированных модификаций</td><td><span class="req-category security">Безопасность</span></td><td><span class="severity high"><span class="dot"></span>Высокая</span></td><td><div class="check-col"><div class="custom-check" data-req="2"></div></div></td></tr>
@@ -379,50 +316,29 @@
             </div>
             <div class="ai-grid">
                 <div class="ai-card reveal">
-                    <div class="ai-card-icon">🎯</div>
-                    <h3>Уникальные векторы атак</h3>
+                    <div class="ai-card-icon">🎯</div><h3>Уникальные векторы атак</h3>
                     <p>ИИ-системы подвержены специфическим угрозам, не характерным для традиционного ПО: adversarial-атаки, model inversion, membership inference и data poisoning.</p>
-                    <ul>
-                        <li>Adversarial-примеры обманывают классификаторы</li>
-                        <li>Model inversion восстанавливает тренировочные данные</li>
-                        <li>Data poisoning изменяет поведение модели</li>
-                    </ul>
+                    <ul><li>Adversarial-примеры обманывают классификаторы</li><li>Model inversion восстанавливает тренировочные данные</li><li>Data poisoning изменяет поведение модели</li></ul>
                 </div>
                 <div class="ai-card reveal">
-                    <div class="ai-card-icon">📐</div>
-                    <h3>Регуляторные требования</h3>
+                    <div class="ai-card-icon">📐</div><h3>Регуляторные требования</h3>
                     <p>ФСТЭК-117 устанавливает конкретные требования к безопасности ИИ-систем, включая защиту данных, контроль целостности и прозрачность решений.</p>
-                    <ul>
-                        <li>Обязательная сертификация для госзаказчиков</li>
-                        <li>Требования к журналированию и аудиту</li>
-                        <li>Стандарты объяснимости решений</li>
-                    </ul>
+                    <ul><li>Обязательная сертификация для госзаказчиков</li><li>Требования к журналированию и аудиту</li><li>Стандарты объяснимости решений</li></ul>
                 </div>
                 <div class="ai-card reveal">
-                    <div class="ai-card-icon">⚡</div>
-                    <h3>Риски для бизнеса</h3>
+                    <div class="ai-card-icon">⚡</div><h3>Риски для бизнеса</h3>
                     <p>Несоответствие требованиям ведёт к финансовым потерям, репутационным рискам и потенциальной остановке критически важных сервисов.</p>
-                    <ul>
-                        <li>Штрафы до 5 млн рублей</li>
-                        <li>Приостановка эксплуатации систем</li>
-                        <li>Потеря доверия клиентов и партнёров</li>
-                    </ul>
+                    <ul><li>Штрафы до 5 млн рублей</li><li>Приостановка эксплуатации систем</li><li>Потеря доверия клиентов и партнёров</li></ul>
                 </div>
                 <div class="ai-card reveal">
-                    <div class="ai-card-icon">🔧</div>
-                    <h3>Преимущества чек-листа</h3>
+                    <div class="ai-card-icon">🔧</div><h3>Преимущества чек-листа</h3>
                     <p>Систематизированный подход к самопроверке сокращает время подготовки к аудиту и помогает выявить уязвимости до внешней проверки.</p>
-                    <ul>
-                        <li>Структурированная проверка по 10 направлениям</li>
-                        <li>Приоритизация по уровню критичности</li>
-                        <li>Экспорт результатов для отчётности</li>
-                    </ul>
+                    <ul><li>Структурированная проверка по 10 направлениям</li><li>Приоритизация по уровню критичности</li><li>Экспорт результатов для отчётности</li></ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- === АУДИО И ВИДЕО (ВСТРОЕННЫЕ ПЛЕЕРЫ) === -->
     <section style="background: var(--gray-100); padding: 4rem 2rem;">
         <div class="container">
             <div class="section-header">
@@ -431,23 +347,17 @@
                 <p class="section-subtitle">Прослушайте краткий гайд или посмотрите видео-разбор ключевых требований</p>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; max-width: 1000px; margin: 0 auto;">
-                <!-- АУДИО ПЛЕЕР -->
                 <div style="background: var(--white); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--gray-300); box-shadow: var(--shadow-md);">
                     <div style="text-align: center; margin-bottom: 1.5rem;">
-                        <div style="width: 80px; height: 80px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1rem;">🎧</div>
+                        <div style="width: 80px; height: 80px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1rem;"></div>
                         <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem;">Аудио-гайд</h3>
                         <p style="font-size: 0.9rem; color: var(--gray-500); line-height: 1.6;">Краткий обзор ключевых пунктов приказа ФСТЭК-117</p>
                     </div>
                     <div style="background: var(--gray-100); border-radius: 12px; overflow: hidden; border: 1px solid var(--gray-300);">
-                        <iframe src="https://drive.google.com/file/d/1Z_YJZHV9Vq82x9pbHnhzuzEnHMpIebM4/preview" 
-                                style="width: 100%; height: 120px; border: none;" 
-                                allow="autoplay"
-                                loading="lazy">
-                        </iframe>
+                        <iframe src="https://drive.google.com/file/d/1Z_YJZHV9Vq82x9pbHnhzuzEnHMpIebM4/preview" style="width: 100%; height: 120px; border: none;" allow="autoplay" loading="lazy"></iframe>
                     </div>
                 </div>
                 
-                <!-- ВИДЕО ПЛЕЕР -->
                 <div style="background: var(--white); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--gray-300); box-shadow: var(--shadow-md);">
                     <div style="text-align: center; margin-bottom: 1.5rem;">
                         <div style="width: 80px; height: 80px; background: var(--accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1rem;">🎬</div>
@@ -456,24 +366,19 @@
                     </div>
                     <div style="background: var(--gray-100); border-radius: 12px; overflow: hidden; border: 1px solid var(--gray-300);">
                         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                            <iframe src="https://drive.google.com/file/d/1-ugnWhTSlH9JH7kHNXY4U_f_m2mdd-WI/preview" 
-                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                                    allow="autoplay"
-                                    loading="lazy">
-                            </iframe>
+                            <iframe src="https://drive.google.com/file/d/1-ugnWhTSlH9JH7kHNXY4U_f_m2mdd-WI/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="autoplay" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- === КОНЕЦ БЛОКА АУДИО И ВИДЕО === -->
 
     <section class="cta">
         <div class="container cta-content">
             <h2 class="reveal">Готовы проверить свою ИИ-систему?</h2>
             <p class="reveal">Начните самопроверку прямо сейчас — это бесплатно и занимает около 2 часов</p>
-            <a href="#requirements" class="btn btn-primary reveal" style="font-size: 1.1rem; padding: 1rem 2.5rem;">🚀 Начать проверку</a>
+            <a href="#requirements" class="btn btn-primary reveal" style="font-size: 1.1rem; padding: 1rem 2.5rem;"> Начать проверку</a>
         </div>
     </section>
 
@@ -487,56 +392,32 @@
             <div class="contacts-grid">
                 <div class="contact-info reveal">
                     <div class="contact-item">
-                        <div class="contact-icon">👤</div>
-                        <div>
-                            <h4>Автор проекта</h4>
-                            <p>Елена Иванова</p>
-                        </div>
+                        <div class="contact-icon"></div>
+                        <div><h4>Автор проекта</h4><p>Елена Иванова</p></div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:contact@fstec117-checklist.ru">contact@fstec117-checklist.ru</a></p>
-                        </div>
+                        <div><h4>Email</h4><p><a href="mailto:contact@fstec117-checklist.ru">contact@fstec117-checklist.ru</a></p></div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">💬</div>
-                        <div>
-                            <h4>Telegram</h4>
-                            <p><a href="https://t.me/fstec117_checklist">@fstec117_checklist</a></p>
-                        </div>
+                        <div><h4>Telegram</h4><p><a href="https://t.me/fstec117_checklist">@fstec117_checklist</a></p></div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">🌐</div>
-                        <div>
-                            <h4>GitHub</h4>
-                            <p><a href="https://github.com/AISecurityLadyPaladin/fstec-117-checklist">AISecurityLadyPaladin</a></p>
-                        </div>
+                        <div class="contact-icon"></div>
+                        <div><h4>GitHub</h4><p><a href="https://github.com/AISecurityLadyPaladin/fstec-117-checklist">AISecurityLadyPaladin</a></p></div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Локация</h4>
-                            <p>Москва, Россия</p>
-                        </div>
+                        <div><h4>Локация</h4><p>Москва, Россия</p></div>
                     </div>
                 </div>
                 <div class="contact-form reveal">
                     <h3>✉️ Написать автору</h3>
                     <form onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Ваше имя</label>
-                            <input type="text" id="name" placeholder="Как к вам обращаться?" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="your@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Сообщение</label>
-                            <textarea id="message" placeholder="Опишите ваш вопрос или предложение..." required></textarea>
-                        </div>
+                        <div class="form-group"><label for="name">Ваше имя</label><input type="text" id="name" placeholder="Как к вам обращаться?" required></div>
+                        <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="your@email.com" required></div>
+                        <div class="form-group"><label for="message">Сообщение</label><textarea id="message" placeholder="Опишите ваш вопрос или предложение..." required></textarea></div>
                         <button type="submit" class="form-submit">Отправить сообщение</button>
                     </form>
                 </div>
@@ -587,7 +468,7 @@
             rows.forEach((row, i) => {
                 const num = row.querySelector('td:first-child').textContent;
                 const name = row.querySelector('td:nth-child(2) strong').textContent;
-                const status = saved[num] ? '✓ Выполнено' : '✕ Не выполнено';
+                const status = saved[num] ? '✓ Выполнено' : ' Не выполнено';
                 report += `${num}. ${name} — ${status}\n`;
             });
             const blob = new Blob([report], { type: 'text/plain;charset=utf-8' });
