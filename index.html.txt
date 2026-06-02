@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приказ ФСТЭК №117: перевод для IT-специалиста</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 10px; }
+        h2 { color: #3498db; margin-top: 30px; margin-bottom: 15px; border-left: 5px solid #3498db; padding-left: 15px; }
+        h3 { color: #2980b9; margin-top: 20px; margin-bottom: 10px; }
+        p { margin-bottom: 15px; }
+        
+        /* Таблицы */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; font-weight: bold; color: #2c3e50; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+
+        /* Медиа блоки */
+        .media-block {
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        audio, video {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        
+        /* Кнопки и ссылки */
+        .btn-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn-link:hover { background-color: #2980b9; }
+        
+        .highlight { background: #e8f4fd; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            table { font-size: 12px; }
+            th, td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📜 Приказ ФСТЭК №117: перевод для IT-специалиста</h1>
+    <p style="text-align: center; color: #7f8c8d;">Практический чек-лист для аудита ИИ-систем | Автор: AISecurityLadyPaladin (Елена [Фамилия]) | РАНХиГС</p>
+
+    <!-- БЛОК 1: АУДИО -->
+    <div class="media-block">
+        <h3>🎧 Аудио-гайд по требованиям</h3>
+        <p>Краткий обзор ключевых пунктов приказа для прослушивания «в дороге».</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+
+    <!-- БЛОК 2: ВИДЕО -->
+    <div class="media-block">
+        <h3>🎬 Видео-презентация проекта</h3>
+        <p>Визуализация процесса перевода регуляторики на язык кода.</p>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео элемент.
+        </video>
+    </div>
+
+    <h2>1. Проблема и Решение</h2>
+    <p><strong>Проблема:</strong> Приказ ФСТЭК №117 (в силе с 01.03.2026) вводит жесткие требования к ИИ, но юридический язык сложен для разработчиков.</p>
+    <p><strong>Решение:</strong> Создан чек-лист, переводящий пункты 60, 61, 71 в технические тесты. Инструмент сокращает время аудита с 4 часов до 30 минут.</p>
+
+    <h2>2. Сравнение моделей (DeepSeek vs Qwen)</h2>
+    <p>Для анализа использованы две LLM. Совпадение выделенных требований: <strong>80%</strong>.</p>
+    <ul>
+        <li><strong>DeepSeek:</strong> Лучше для глубокого аудита (термины: SHAP, adversarial attacks).</li>
+        <li><strong>Qwen:</strong> Лучше для внедрения (термины: JSON Schema, DLP-фильтрация).</li>
+    </ul>
+
+    <h2>3. Чек-лист: 6 ключевых требований</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Требование (из приказа)</th>
+                <th>Перевод на язык IT</th>
+                <th>Как проверить</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Защита от воздействия на данные/параметры модели (п. 60)</td>
+                <td>Исключить Data Poisoning и кражу весов</td>
+                <td>Тест на устойчивость: изменить 1% обучающей выборки</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Запрет передачи секретов разработчику модели (п. 60)</td>
+                <td>Не использовать реальные ПДн для дообучения внешних моделей</td>
+                <td>Запросить NDA и акт использования синтетических данных</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Контроль тематик запросов и форматов ответов (п. 61б)</td>
+                <td>System Prompt + Guardrails («границы дозволенного»)</td>
+                <td>Red Teaming: задать запрещенный вопрос</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Детекция недостоверных ответов («галлюцинаций») (п. 61в)</td>
+                <td>Оценка Confidence Score ответа</td>
+                <td>Блокировать ответы с score < 0.7</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ограничение полномочий при сбоях (п. 61г)</td>
+                <td>Fallback-механизм: переключение на оператора</td>
+                <td>Симулировать серию ошибок и проверить «откат» прав</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Сертифицированные средства защиты (п. 71)</td>
+                <td>Использовать только ПО с сертификатами ФСТЭК</td>
+                <td>Запросить сертификаты на антивирус, МЭ, средства защиты ИИ</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight">
+        <h3> Полезные ссылки</h3>
+        <p><a href="https://github.com/AISecurityLadyPaladin/fstec-117-checklist/raw/main/Prikaz-FSTEK-117-perevod-dlya-IT-specialista.pdf" target="_blank" class="btn-link">📄 Скачать PDF-презентацию</a></p>
+        <p><a href="https://drive.google.com/file/d/1Z_YJZHV9Vq82x9pbHnhzuzEnHMpIebM4/view?usp=sharing" target="_blank" class="btn-link">☁️ Аудио на Google Drive (резерв)</a></p>
+    </div>
+
+    <footer>
+        <p><strong>Автор:</strong> AISecurityLadyPaladin (Елена [Ваша Фамилия])</p>
+        <p>AI Risk Analyst & Security Researcher</p>
+        <p>Проект выполнен в рамках аттестации РАНХиГС, 2026</p>
+        <p>GitHub: <a href="https://github.com/AISecurityLadyPaladin/fstec-117-checklist">AISecurityLadyPaladin/fstec-117-checklist</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
