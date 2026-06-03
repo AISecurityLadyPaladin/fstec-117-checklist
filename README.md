@@ -14,7 +14,7 @@
 6. Прослушайте аудио-гайд или посмотрите видео-презентацию
 
 ## 👱‍♀️👑 Автор
-**AISecurityLadyPaladin** (Елена Иванова)  
+**AISecurityLadyPaladin**  
 *AI Risk Analyst & Security Researcher*  
 Программа «Специалист по системам ИИ», РАНХиГС, 2026  
 🔗 GitHub: [AISecurityLadyPaladin](https://github.com/AISecurityLadyPaladin)
